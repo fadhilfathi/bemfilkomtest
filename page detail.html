@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPJ Online | BEM Fasilkom UI</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://bem.cs.ui.ac.id/lpj17/assets/css/app.css">
+    <link rel="shortcut icon" href="https://bem.cs.ui.ac.id/lpj17/favicon.ico">
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106964302-6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-106964302-6');
+    </script>
+</head>
+<body>
+    <div class="container" id="main-container">
+                    <h1 class="text-center">Explore BEM</h1>
+    <div class="row text-center">
+        <h1>Biro Bisnis dan Kemitraan</h1>
+                
+                <section class="division-section">
+            <h2> Deskripsi Bidang </h2>
+            <p> Biro Bismit adalah biro yang bertugas untuk menunjang internal BEM Fasilkom UI dari segi finansial yaitu dengan mencari sumber dana potensial dari usaha dan bisnis yang memanfaatkan Teknologi Informasi maupun non-TI.  Selain itu, Bismit juga menjalin kemitraan dengan pihak di luar BEM Fasilkom UI untuk memenuhi kebutuhan internal BEM dan mendukung berjalannya usaha bisnisnya. Bismit merupakan biro yang menjadi wadah bagi mahasiswa Fasilkom UI yang berjiwa entrepreneur. </p>
+        </section>
+
+        <h2> Program Kerja </h2>
+            </div>
+
+    <div class="grid" id="projects" class="col-sm-12">
+        <a class="grid-sizer col-md-4 col-sm-6" href="#"></a>
+                    <a class="grid-item col-md-4 col-sm-6" href="https://bem.cs.ui.ac.id/lpj17/activities/12">
+                <div class="card">
+                    <div class="row text-center">
+                        <h2>Bismit Fresh Money</h2>
+                    </div>
+                    <div class="row text-center description">
+                        <p class="text-black">Bismit Fresh Money adalah program kerja yang berbentuk usaha bisnis yang dilakukan secara rutin, yang terdiri dari danus statis (kantin kejujuran) dan danus dinamis (danus berjalan). Berfungsi untuk mendapatkan pemasukan tambahan untuk BEM Fasilkom UI dimana dana ini nantinya dapat dipakai untuk program kerja Biro/Dept lain.<br />
+</p>
+                    </div>
+                </div>
+            </a>
+                    <a class="grid-item col-md-4 col-sm-6" href="https://bem.cs.ui.ac.id/lpj17/activities/13">
+                <div class="card">
+                    <div class="row text-center">
+                        <h2>Request Danus</h2>
+                    </div>
+                    <div class="row text-center description">
+                        <p class="text-black">Membantu biro/departemen merealisasikan ide bisnis untuk menunjang jalannya program kerja dari biro/departemen tersebut.</p>
+                    </div>
+                </div>
+            </a>
+                    <a class="grid-item col-md-4 col-sm-6" href="https://bem.cs.ui.ac.id/lpj17/activities/14">
+                <div class="card">
+                    <div class="row text-center">
+                        <h2>Partnership</h2>
+                    </div>
+                    <div class="row text-center description">
+                        <p class="text-black">Mencari dukungan atau mitra dari luar lingkungan Fasilkom UI untuk menunjang kegiatan yang ada di BEM Fasilkom UI.</p>
+                    </div>
+                </div>
+            </a>
+                    <a class="grid-item col-md-4 col-sm-6" href="https://bem.cs.ui.ac.id/lpj17/activities/32">
+                <div class="card">
+                    <div class="row text-center">
+                        <h2>Bismit Project Hunter</h2>
+                    </div>
+                    <div class="row text-center description">
+                        <p class="text-black">Usaha bisnis yang dilakukan untuk mencari pemasukan bagi BEM Fasilkom UI dengan cara mengerjakan proyek teknologi informasi yang berasal dari dalam maupun luar Fasilkom UI.<br />
+</p>
+                    </div>
+                </div>
+            </a>
+                    <a class="grid-item col-md-4 col-sm-6" href="https://bem.cs.ui.ac.id/lpj17/activities/39">
+                <div class="card">
+                    <div class="row text-center">
+                        <h2>Loker</h2>
+                    </div>
+                    <div class="row text-center description">
+                        <p class="text-black">Mengelola penyewaan loker untuk memenuhi kebutuhan mahasiswa di lingkungan Fasilkom UI<br />
+</p>
+                    </div>
+                </div>
+            </a>
+            </div>
+    </div>
+
+    <footer class="text-right">
+        <p>2016-2017 | Contrived with passion by PTI BEM Fasilkom UI | <a href="https://bem.cs.ui.ac.id/form/feedback">Send Feedback</a></p>
+    </footer>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.1/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('form.delete').submit(function() {
+                return confirm('Apakah Anda yakin ingin menghapus item tersebut?');
+            });
+
+            var isDirty = false;
+            $(":input").change(function() {
+                isDirty = true;
+            });
+
+            $('.publish').click(function() {
+                if (isDirty) {
+                    alert('Mohon simpan terlebih dahulu perubahan yang sudah dibuat.');
+                    return false;
+                } else {
+                    return true;
+                }
+            });
+
+            $('select').not('#divisionPeriodSelect').select2();
+
+            // Source: http://stackoverflow.com/questions/7862233/twitter-bootstrap-tabs-go-to-specific-tab-on-page-reload-or-hyperlink
+            var url = document.location.toString();
+            if (url.match('#')) {
+                $('.nav-tabs a[href="#' + url.split('#')[1] + '"]').tab('show');
+            }
+
+            $('.grid').masonry({
+                itemSelector: '.grid-item',
+                columnWidth: '.grid-sizer',
+                percentPosition: true
+            });
+
+            $('#divisionPeriodSelect').on('change', function (e) {
+                $('#divisionPeriodNavTabs li a').eq($(this).val()).tab('show'); 
+            });
+        });
+    </script>
+
+    </body>
+</html>
