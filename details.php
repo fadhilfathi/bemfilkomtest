@@ -1,4 +1,7 @@
 <!doctype html>
+<?php
+	include "koneksi.php";
+ ?>
 <html lang="en">
 	<head>
 		<!-- Required meta tags -->
@@ -106,6 +109,17 @@
 		</nav>
 		<br>
 		<div class="container">
+			<?
+			$query = "SELECT A.id_berita, B.kategori, A.judul, A.isi, A.pengirim, A.tanggal FROM berita A, kategori B WHERE A.id_kategori=B.id_kategori AND A.id_berita='$id_berita'";
+	 		$sql = mysql_query($query);
+	 		$hasil = mysql_fetch_array($sql);
+	 		$id_berita = $hasil['id_berita'];
+	 		$kategori = stripslashes($hasil['kategori']);
+	 		$judul = stripslashes($hasil['judul']);
+	 		$isi = nl2br(stripslashes($hasil['isi']));
+	 		// $pengirim = stripslashes($hasil['pengirim']);
+	 		$tanggal = stripslashes($hasil['tanggal']);
+			?>
 			<div class="row">
 				<div class="col-md-12">
 					<br><p></p>
@@ -118,8 +132,8 @@
 									</div>
 								</div>
 								<div class="col-md-8 top-title">
-									<h3 class="card-title card-title-select-post">Ospace</h3>
-									<h5 class="card-subtitle mb-2 text-muted2">Ospace event</h5>
+									<h3 class="card-title card-title-select-post">$judul</h3>
+									<h5 class="card-subtitle mb-2 text-muted2"></h5>
 								</div>
 							</div>
 							<br>
